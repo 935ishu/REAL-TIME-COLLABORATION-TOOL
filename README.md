@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+REAL-TIME-C0LLABOARTION-TOOL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+COMPANY :CODTECH IT SOLUTIONS
 
-## Available Scripts
+NAME :HARIJANA ISWARYA
 
-In the project directory, you can run:
+INTERN ID :CT04DK692
 
-### `npm start`
+DOMAIN :MERN STACK WEB DEVELOPMENT
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+DURATION:4 WEEKS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+MENTOR:NEELA SANTHOSH
 
-### `npm test`
+Real-Time Collaborative Notepad using MERN and Socket.IO
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Task 3 involved building a Real-Time Collaborative Notepad application where multiple users can simultaneously view and edit a shared document. This task focused on combining the power of the MERN stack (MongoDB, Express.js, React, and Node.js) with Socket.IO to deliver real-time bidirectional communication. The core objective was to allow users to experience collaborative typing — a feature popular in tools like Google Docs — without needing to refresh the page.
 
-### `npm run build`
+We started with setting up the backend using Node.js and Express. We used Socket.IO to establish and manage WebSocket connections between the server and connected clients. When one user types or edits content in the notepad, the changes are instantly broadcast to all other users in real-time. The server listens for an event like note-changed from a client, and then emits an update event to all other connected clients.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On the frontend, we used React.js to create a clean and responsive UI with a central text area for collaborative editing. The frontend connects to the backend via Socket.IO’s client library and listens for content updates. Any changes made by one user are immediately visible to all others — ensuring a truly collaborative experience. React hooks (useState, useEffect, and useRef) were used for managing local state and socket communication.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To ensure smooth synchronization, we implemented input throttling or debouncing to reduce the number of socket events and avoid excessive network traffic. The app uses a basic socket room structure, so future upgrades can support multiple documents or users editing separate rooms.

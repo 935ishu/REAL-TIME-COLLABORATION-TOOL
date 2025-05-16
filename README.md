@@ -21,3 +21,7 @@ We started with setting up the backend using Node.js and Express. We used Socket
 On the frontend, we used React.js to create a clean and responsive UI with a central text area for collaborative editing. The frontend connects to the backend via Socket.IO’s client library and listens for content updates. Any changes made by one user are immediately visible to all others — ensuring a truly collaborative experience. React hooks (useState, useEffect, and useRef) were used for managing local state and socket communication.
 
 To ensure smooth synchronization, we implemented input throttling or debouncing to reduce the number of socket events and avoid excessive network traffic. The app uses a basic socket room structure, so future upgrades can support multiple documents or users editing separate rooms.
+
+OUTPUT:
+
+![Image](https://github.com/user-attachments/assets/d1342db1-2f83-4559-9e4c-ef82c1d2782f)
